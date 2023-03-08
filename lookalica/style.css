@@ -1,0 +1,170 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Kanit;
+}
+
+.welcome-heading{
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.introduction-p{
+    text-align: center;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px
+}
+.great-deals-p{
+    width: 600px;
+}
+.great-deals-heading{
+    font-weight: bold;
+    margin-top: 20px;
+}
+.get-started-btn{
+    width: 150px;
+    height: 40px
+}
+.kartica{
+    width: 200px;
+    height: 250px;
+    background-color: #e1e1e1;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.kartica:hover{
+    cursor: pointer;
+    background-color: #dedede;
+    box-shadow: 13px 18px 25px -14px rgba(0,0,0,0.65);
+}
+
+img{
+    object-fit: contain;
+}
+.mobile-phone-img{
+    filter: opacity(25%) grayscale(100%);
+}
+.mobile-phone-img-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.mobile-phone-img-text{
+    position: absolute;
+    width: 45%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: large;
+}
+.card-container {
+    display: flex;
+    border: 2px solid #5d5d5d;
+    border-radius: 10px;
+    overflow: hidden;
+    
+  }
+  .card-container:hover{
+    box-shadow: 13px 18px 25px -24px rgba(0,0,0,0.75);
+  }
+
+  .card-image-container {
+    width: 30%;
+    min-width: 350px;
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-details-container {
+    width: 70%;
+    padding: 10px;
+  }
+
+
+@media (max-width: 1000px) {
+    .mobile-phone-img-text, .introduction-p{
+        width: 80%
+    }
+    .products-container{
+        margin: 20px
+    }
+    .card-container{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+    }
+    .card-image-container{
+        width: 90%
+    }
+    .card-details-container{
+        margin: 10px;
+        font-size: medium
+    }
+    
+}
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px
+}
+.contact-us > div > h4 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 850px) {
+    .products-container{
+        width: 95%;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    .card-container{
+        flex-wrap: wrap;
+    }
+    .card-image-container {
+        width: 70%;
+        min-width: 340px;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+  
+      .card-details-container {
+        width: 95%;
+        font-size: large;
+    }
+ 
+}
+
+@media  (max-width: 700px) {
+   
+    video,.great-deals-container{
+        width: 90%
+    }
+    .great-deals-p{
+        width: 100%;
+    }
+    .great-deals-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-container {
+        flex-direction: column;
+      }
+
+    
+}
